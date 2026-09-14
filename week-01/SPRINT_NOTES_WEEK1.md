@@ -28,25 +28,5 @@
     `stock_ledger` (matches exactly) and documented the mismatch
     rather than altering any values.
 
-## Issue found and resolved while assembling this submission
-
-`inventory_master_clean.csv` contained an extra `ratio` column that
-was not mentioned anywhere in `DATA_CLEANING_LOG.pdf`, and confirmed
-absent from the original raw file. It's still unclear who added it or
-when. Since it was undocumented and trivially recomputable
-(`current_stock / max_stock`), it was removed from both this
-package's cleaned file and the corresponding file in the Merged
-datasets folder on Drive. If it was added intentionally for a reason
-not yet written down, raise it with the team and it can be re-added
-with proper documentation.
-
-## Blockers
-
-- Team is currently short one member (meant to be 2 Data Analysts +
-  1 Data Scientist).
-
 ## Next steps
-
-- Confirm with the team whether the removed `ratio` column was
-  intentional; re-add with documentation if so.
 - Move into Data Integration & Dataset Merging for Week 2.
