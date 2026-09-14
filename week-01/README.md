@@ -2,16 +2,12 @@
 
 ## Week 1 submission: Data Profiling & Data Cleaning
 
-This package contains the verified Week 1 deliverables, pulled directly
-from the team's Google Drive project folder
-(`HEAVY_SUPPLIERS_WAREHOUSE PROJECT`).
-
 ## Team
 
 - **Odetunde Olumide Temitope** — Data Scientist. Scrum Master this week.
-- **Teammate** — Data Analyst. (Name not yet confirmed in any shared
-  document; her uploads to Drive are tied to the email
-  `kukoyiomotola249@gmail.com`.)
+- **Kukoyi Zainab Omotola** — Data Analyst-
+- **Nyong Asuabiat** — Data Analyst
+- **Mishita Narang** — Data Analyst
 
 ## What's in this package
 
@@ -63,15 +59,3 @@ Full detail in `docs/DATA_CLEANING_LOG.pdf`. Summary of what changed:
   and its own `max_stock`/`reorder_level`/`safety_stock` fields was
   found, verified against `stock_ledger`, and documented — not
   altered.
-
-## Resolved during assembly of this package
-
-`inventory_master_clean.csv` was found to contain an extra `ratio`
-column (`current_stock / max_stock`) that was not mentioned anywhere
-in `DATA_CLEANING_LOG.pdf` or in the original raw file. Since it was
-undocumented and easily recomputed from the two columns it derives
-from, it was removed from both `data/cleaned/inventory_master_clean.csv`
-in this package and the corresponding file in the Merged datasets
-folder on Drive. If this column was added intentionally for a reason
-not yet written down, flag it and it can be re-added with proper
-documentation.
