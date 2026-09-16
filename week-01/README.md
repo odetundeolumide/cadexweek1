@@ -7,7 +7,6 @@
 - **Odetunde Olumide Temitope** — Data Scientist. Scrum Master this week.
 - **Kukoyi Zainab Omotola** — Data Analyst-
 - **Nyong Asuabiat** — Data Analyst
-- **Mishita Narang** — Data Analyst
 
 ## What's in this package
 
