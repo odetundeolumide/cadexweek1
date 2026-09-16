@@ -51,10 +51,4 @@ Full detail in `docs/DATA_CLEANING_LOG.pdf`. Summary of what changed:
   found to not be unique in the source data (197 and 202 IDs each
   shared by two unrelated transactions). Fixed with new surrogate
   keys `invoice_uid` / `payment_uid`, and flagged every affected row
-  with `invoice_id_ambiguous`.
-- `products.csv`: one incorrect `margin_percentage` value (product
-  P002) corrected from 37.3 to 60.0 to match its own cost/price.
-- `inventory_master.csv`: a scale mismatch between `current_stock`
-  and its own `max_stock`/`reorder_level`/`safety_stock` fields was
-  found, verified against `stock_ledger`, and documented — not
-  altered.
+  with `invoice_id_ambiguous`
