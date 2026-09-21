@@ -1,6 +1,13 @@
 # Sprint Notes — Week 1
 
 **Scrum Master this week:** Odetunde Olumide Temitope
+
+**Teammates:**
+
+Kukoyi Zainab Omotola — Data Analyst
+
+Nyong Asuabiat — Data Analyst
+
 **Sprint scope:** Data Profiling & Structure Analysis, Data Cleaning & Quality Improvement
 
 ## What was completed
