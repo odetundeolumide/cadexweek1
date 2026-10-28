@@ -21,8 +21,8 @@ Nyong Asuabiat — Data Analyst
   - Split `branches.csv`'s `warehouse_capacity` (text) into a numeric
     `warehouse_capacity_sqft` column.
   - Found that `invoice_id` and `payment_id` were not unique in the
-    source data — 197 and 202 IDs respectively were each shared by two
-    unrelated transactions. Added new surrogate keys (`invoice_uid`,
+    source data — 196 invoice IDs (393 rows) and 201 payment IDs (403 rows)
+    were each reused by different transactions. Added new surrogate keys (`invoice_uid`,
     `payment_uid`) and flagged every affected row with
     `invoice_id_ambiguous` so it can't be silently mistaken for a
     unique key downstream.
@@ -32,7 +32,7 @@ Nyong Asuabiat — Data Analyst
   - Found a scale mismatch between `inventory_master.csv`'s
     `current_stock` and its own `max_stock`/`reorder_level`/
     `safety_stock` fields. Verified `current_stock` against
-    `stock_ledger` (matches exactly) and documented the mismatch
+    `stock_ledger` (matches on 166 of 180 positions; 14 differ by 16–515 units) and documented the mismatch
     rather than altering any values.
 
 ## Next steps

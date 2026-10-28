@@ -48,7 +48,7 @@ Full detail in `docs/DATA_CLEANING_LOG.pdf`. Summary of what changed:
 - `branches.csv`: `warehouse_capacity` (text) split into
   `warehouse_capacity_sqft` (number).
 - `invoices.csv` / `payments.csv`: `invoice_id` and `payment_id` were
-  found to not be unique in the source data (197 and 202 IDs each
-  shared by two unrelated transactions). Fixed with new surrogate
+  found to not be unique in the source data (196 invoice IDs reused
+  across 393 rows and 201 payment IDs reused across 403 rows). Fixed with new surrogate
   keys `invoice_uid` / `payment_uid`, and flagged every affected row
   with `invoice_id_ambiguous`
